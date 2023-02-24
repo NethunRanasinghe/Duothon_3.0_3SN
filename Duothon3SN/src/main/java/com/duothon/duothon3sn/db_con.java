@@ -3,6 +3,8 @@ package com.duothon.duothon3sn;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 import static java.lang.System.out;
 
@@ -12,32 +14,54 @@ public class db_con {
     ResultSet result = null;
 
     // Retrieve Owner Data
-    public List<String> Get_Owner()
+    public List<owner>Get_Owner(int id)
     {
-        List<String> OwnerData = new ArrayList<>();
+        List<owner> OwnerData = new ArrayList<>();
 
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/testmdb","root","");
+            conn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/blue_healthcare_db","root","");
             state = conn.createStatement();
 
-            String Query = "";
 
-            result = state.executeQuery(Query);
-
-            while (result.next())
+            String Query = "SELECT * FROM owner WHERE id=?";
+            try
             {
+                PreparedStatement que = conn.prepareStatement(Query);
+                owner owner = new owner();
 
+                que.setInt(1,id);
+                result = state.executeQuery(Query);
 
+                while (result.next())
+                {
+                    int phar_id = result.getInt("ph_id");
+                    String name = result.getString("name");
+                    String phone = result.getString("phno");
+                    String nic = result.getString("nic");
+                    String email = result.getString("email");
+                    String address = result.getString("address");
 
+                    owner.set_id(phar_id);
+                    owner.set_name(name);
+                    owner.set_phone(phone);
+                    owner.set_nic(nic);
+                    owner.set_email(email);
+                    owner.set_address(address);
+
+                    OwnerData.add(owner);
+                }
+            }
+            catch (SQLException e)
+            {
+                throw new RuntimeException(e);
             }
         }
         catch (Exception e)
         {
             out.print(e);
         }
-        //Pass
 
         return OwnerData;
     }
