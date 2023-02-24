@@ -1,0 +1,43 @@
+body {
+    color: #404E67;
+    background: #F5F7FA;
+    font-family: 'Open Sans', sans-serif;
+}
+.table-wrapper {
+    width: 1050px;
+    margin: 10px auto;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+table.table {
+    table-layout: fixed;
+}
+
+table.table th:last-child {
+    width: 130px;
+}
+
+table.table th:nth-child(1) {
+    width: 95px;
+}
+table.table td a {
+    cursor: pointer;
+
+}
+table.table td a.add {
+    color: #27C46B;
+}
+table.table td a.edit {
+    color: #FFC107;
+}
+table.table td a.delete {
+    color: #E34724;
+}
+
+
+
+table.table td .add {
+    display: none;
+}
