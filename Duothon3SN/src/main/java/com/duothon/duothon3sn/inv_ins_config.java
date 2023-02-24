@@ -16,8 +16,11 @@ public class inv_ins_config extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String name=request.getParameter("name");
+        String pName=request.getParameter("pName");
+        String phName=request.getParameter("phName");
+
         int quantity=Integer.parseInt(request.getParameter("quantity"));
+        int id=Integer.parseInt(request.getParameter("id"));
         float price=Float.parseFloat(request.getParameter("price"));
         String supplier=request.getParameter("supplier");
         String expDate=request.getParameter("expdate");
@@ -27,6 +30,6 @@ public class inv_ins_config extends HttpServlet {
 
         db_con dbCon=new db_con();
 
-//        dbCon.Set_Pharmacy(name,quantity,price,supplier,expDate,ndl,manufac);
+//        dbCon.Set_Inventory(name,quantity,price,supplier,expDate,ndl,manufac);
     }
 }

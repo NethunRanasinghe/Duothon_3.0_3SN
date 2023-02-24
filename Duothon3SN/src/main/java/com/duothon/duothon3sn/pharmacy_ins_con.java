@@ -5,6 +5,8 @@ import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
 import java.io.IOException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.sql.PreparedStatement;
 
 @WebServlet(name = "pharmacy_ins_con", value = "/pharmacy_ins_con")
@@ -27,11 +29,33 @@ public class pharmacy_ins_con extends HttpServlet {
         String email=request.getParameter("email");
         String license=request.getParameter("license");
 
+        String password = request.getParameter("password");
+
+        //response.sendRedirect("/date_time.jsp");
+        String HashedPassword = null;
+        // MessageDigest instance for MD5.
+        MessageDigest m = null;
+        try {
+            m = MessageDigest.getInstance("MD5");
+        } catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException(e);
+        }
+        // Add plain-text password bytes to digest using MD5 update() method.
+        m.update(password.getBytes());
+        // Convert the hash value into bytes
+        byte[] bytes = m.digest();
+        // The bytes array has bytes in decimal form. Converting it into hexadecimal format.
+        StringBuilder s = new StringBuilder();
+        for (int i = 0; i < bytes.length; i++) {
+            s.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
+        }
+        // Complete hashed password in hexadecimal format
+        HashedPassword = s.toString();
+
 
         db_con dbCon=new db_con();
 
-        dbCon.Set_Pharmacy(name,address,city,contactNo,pass,email,license);
-
+        dbCon.Set_Pharmacy(name,address,city,contactNo,HashedPassword,email,license);
 
 
     }
