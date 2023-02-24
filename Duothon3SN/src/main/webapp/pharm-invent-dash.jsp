@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: ASUS
+  User: Sahansa
   Date: 24/02/2023
   Time: 13:34
   To change this template use File | Settings | File Templates.
@@ -120,7 +120,8 @@
 
   </script>
 </head>
-<body>
+
+<body bgcolor="rgb(100 11139)">
 <div class=" divide">
 
   <nav class="sidebar sid " >
@@ -192,54 +193,35 @@
           <td>Sajeewa</td>
           <td>OK</td>
           <td>
-            <a style="color: rgb(0, 255, 255);" href="google.lk">Update</a>
+            <a style="color: rgb(0,0,139);" href="google.lk">Update</a> &nbsp &nbsp
             <a style="color: red;" href="google.lk">Delete</a>
           </td>
         </tr>
+
         <tr>
           <td>1</td>
-          <td>Veyangoda Pharmacy</td>
-          <td>veyanpharma@gmail.com</td>
-          <td>Sajeewa</td>
+          <td>Gampaha Pharmacy</td>
+          <td>Gampaharma@gmail.com</td>
+          <td>Nethun/td>
           <td>OK</td>
           <td>
-            <a style="color: rgb(0, 255, 255);" href="google.lk">Update</a>
+            <a style="color: rgb(0,0,139);" href="google.lk">Update</a> &nbsp &nbsp
             <a style="color: red;" href="google.lk">Delete</a>
           </td>
         </tr>
+
         <tr>
           <td>1</td>
-          <td>Veyangoda Pharmacy</td>
-          <td>veyanpharma@gmail.com</td>
-          <td>Sajeewa</td>
+          <td>Colombo Pharmacy</td>
+          <td>Colombo@gmail.com</td>
+          <td>Sahansa</td>
           <td>OK</td>
           <td>
-            <a style="color: rgb(0, 255, 255);" href="google.lk">Update</a>
+            <a style="color: rgb(0,0,139);" href="google.lk">Update</a> &nbsp &nbsp
             <a style="color: red;" href="google.lk">Delete</a>
           </td>
         </tr>
-        <tr>
-          <td>1</td>
-          <td>Veyangoda Pharmacy</td>
-          <td>veyanpharma@gmail.com</td>
-          <td>Sajeewa</td>
-          <td>OK</td>
-          <td>
-            <a style="color: rgb(0, 255, 255);" href="google.lk">Update</a>
-            <a style="color: red;" href="google.lk">Delete</a>
-          </td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Veyangoda Pharmacy</td>
-          <td>veyanpharma@gmail.com</td>
-          <td>Sajeewa</td>
-          <td>OK</td>
-          <td>
-            <a style="color: rgb(0, 255, 255);" href="google.lk">Update</a>
-            <a style="color: red;" href="google.lk">Delete</a>
-          </td>
-        </tr>
+
 
         <tbody>
       </table>

@@ -36,7 +36,7 @@
     <div class="flex justify-between item-center">
             <span class="cursor-pointer">
                 <a href="user-front.jsp">
-                    <img class="h-10 inline px-10" src="iamges/logo.png" alt="">
+                    <img class="h-10 inline px-10" src="images/logo.png" alt="">
                 </a>
             </span>
         <span class="text-3xl cursor-pointer mx-2 md:hidden block">
