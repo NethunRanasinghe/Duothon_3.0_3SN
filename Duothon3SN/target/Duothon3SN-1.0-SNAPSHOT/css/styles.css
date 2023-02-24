@@ -7,6 +7,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.coverimg{
+    height: 100px;
+}
+
+.img2{
+    object-fit: contain;
+}
 body{
     background: #e0dbef;
 }

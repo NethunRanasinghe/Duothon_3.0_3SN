@@ -35,7 +35,7 @@
 <nav class="p-5 bg-black shadow md:flex md:items-center md:justify-between">
     <div class="flex justify-between item-center">
             <span class="cursor-pointer">
-                <a href="user-front.jsp">
+                <a href="index.jsp">
                     <img class="h-10 inline px-10" src="images/logo.png" alt="">
                 </a>
             </span>
@@ -47,12 +47,12 @@
     <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-black w-full left-0 md:w-auto md:py-0 py-6 md:pl-0 pl-7
             md:opacity-100 opacity-100 top-[-400px] transition-all ease-in duration-500">
         <li class="mx-5 my-5 md:my-0">
-            <a href="/user-front.jsp"
+            <a href="/index.jsp"
                class="text-xl text-white font-sans md:font-sans hover:text-[#DAA520] duration-500 ">SEARCH</a>
         </li>
         <li class="mx-5 my-5 md:my-0">
             <a href="/movies.jsp"
-               class="text-xl text-white font-sans md:font-sans hover:text-[#DAA520] duration-500">SHOW ALL PARMACHIES</a>
+               class="text-xl text-white font-sans md:font-sans hover:text-[#DAA520] duration-500">SHOW ALL PHARMACIES</a>
         </li>
 
     </ul>
@@ -65,97 +65,10 @@
     <div class="search_box">
         <div class="search_btn"><i class="fas fa-search"></i></div>
         <input type="text" class="input_search" placeholder="What are you looking for?">
+
     </div>
 </div>
-<!--search bar-->
-<!--table results -->
-
-<h2></h2>
-<div class="table-wrapper">
-    <table class="fl-table">
-        <thead>
-        <tr>
-            <th>Pharm ID</th>
-            <th>Pharm Name</th>
-            <th>Location</th>
-            <th>Contact No</th>
-            <th>Email</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>1</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tbody>
-    </table>
-</div>
+<!--search bar closed-->
 
 <!--Footer-->
 <br><br>
