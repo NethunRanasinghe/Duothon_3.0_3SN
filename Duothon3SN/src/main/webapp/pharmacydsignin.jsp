@@ -146,12 +146,6 @@ md:opacity-100 opacity-100 top-[-400px] transition-all ease-in duration-500">
 
 
 
-
-
-
-
-
-
     <!--Footer-->
     <br><br>
 
@@ -168,12 +162,7 @@ md:opacity-100 opacity-100 top-[-400px] transition-all ease-in duration-500">
                 <li>
                     <a href="term.jsp" class="mr-4 hover:underline md:mr-6">TERMS & CONDITIONS</a>
                 </li>
-                <li>
-                    <a href="feedback.jsp" class="mr-4 hover:underline md:mr-6 ">FEEDBACK</a>
-                </li>
-                <li>
-                    <a href="emplogin.jsp" class="hover:underline">STAFF</a>
-                </li>
+
             </ul>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
@@ -181,8 +170,6 @@ md:opacity-100 opacity-100 top-[-400px] transition-all ease-in duration-500">
                                                                                        class="hover:underline"></a>COPYRIGHT © 2022 Veyangoda Pharmacy.ALL RIGHTS RESERVED.
           </span>
     </footer>
-
-
 
 
 </div>

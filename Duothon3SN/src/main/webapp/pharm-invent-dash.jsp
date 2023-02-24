@@ -1,3 +1,11 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: ASUS
+  Date: 24/02/2023
+  Time: 13:34
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -5,11 +13,11 @@
 <head>
 
 
-  <title>ABC Cinema</title>
+  <title>Blue Health</title>
 
 
   <link rel="stylesheet" href="./css/styles.css">
-  <link href="./css/table.css" rel="stylesheet">
+  <link href="/admin/table.css" rel="stylesheet">
   <link rel="shortcut icon" href="images/film.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css" rel="stylesheet" />
@@ -119,7 +127,7 @@
     <ul class="nav">
 
 
-      <center><img src="/admin/images/kindpng_2267500.png" height="60" width="60" class="mt-10"></center>
+      <center><img src="./images/logo.png" height="500" width="500" class="mt-10"></center>
 
       </li><br>
       <li class="nav-item " >
@@ -134,8 +142,6 @@
           Profile
 
         </a>
-
-      </li>
 
       <li class="nav-item">
         <form method="post" action="/empLogoutServlet">
@@ -153,7 +159,7 @@
       <div class="navbar-menu-wrapper  ">
 
         <div class="navbar-brand-wrapper ">
-          <a class="navbar-brand brand-logo" href="/admin/adindex.jsp"><img src="/admin/images/abc_logo.png" class="mt-5 px-10" alt="logo"/></a>
+        <!--  <a class="navbar-brand brand-logo" href="/admin/adindex.jsp"><img src="./images/logo.png" class="mt-5 px-10" alt="logo"/></a>-->
 
         </div>
 
@@ -165,60 +171,80 @@
 
 
     </nav>
+    <h2></h2>
+    <div class="table-wrapper">
+      <table class="fl-table">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Pharmacy Name</th>
+          <th>Pharmacy Email</th>
+          <th>Owner Name</th>
+          <th>Verification Status</th>
+          <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1</td>
+          <td>Veyangoda Pharmacy</td>
+          <td>veyanpharma@gmail.com</td>
+          <td>Sajeewa</td>
+          <td>OK</td>
+          <td>
+            <a style="color: rgb(0, 255, 255);" href="google.lk">Update</a>
+            <a style="color: red;" href="google.lk">Delete</a>
+          </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Veyangoda Pharmacy</td>
+          <td>veyanpharma@gmail.com</td>
+          <td>Sajeewa</td>
+          <td>OK</td>
+          <td>
+            <a style="color: rgb(0, 255, 255);" href="google.lk">Update</a>
+            <a style="color: red;" href="google.lk">Delete</a>
+          </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Veyangoda Pharmacy</td>
+          <td>veyanpharma@gmail.com</td>
+          <td>Sajeewa</td>
+          <td>OK</td>
+          <td>
+            <a style="color: rgb(0, 255, 255);" href="google.lk">Update</a>
+            <a style="color: red;" href="google.lk">Delete</a>
+          </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Veyangoda Pharmacy</td>
+          <td>veyanpharma@gmail.com</td>
+          <td>Sajeewa</td>
+          <td>OK</td>
+          <td>
+            <a style="color: rgb(0, 255, 255);" href="google.lk">Update</a>
+            <a style="color: red;" href="google.lk">Delete</a>
+          </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Veyangoda Pharmacy</td>
+          <td>veyanpharma@gmail.com</td>
+          <td>Sajeewa</td>
+          <td>OK</td>
+          <td>
+            <a style="color: rgb(0, 255, 255);" href="google.lk">Update</a>
+            <a style="color: red;" href="google.lk">Delete</a>
+          </td>
+        </tr>
 
-    <div class="main-panel mt-5">
-      <div class="content-wrapper ">
-        <div class="row">
+        <tbody>
+      </table>
+    </div>
 
-
-        </div>
-
-
-        <div class="container-lg">
-          <div class="table table-responsive">
-
-            <div class="table-wrapper w-full">
-              <div class="table-title">
-                <div class="row">
-                  <div class="col-sm-8"><h2 class="mb-8 font-bold uppercase text-xl">Movie Details</h2></div>
-                  <div class="col-sm-4">
-
-                  </div>
-                </div>
-              </div>
-
-
-              <table class="table table-bordered">
-                <thead>
-                <tr>
-                  <th>Movie ID</th>
-                  <th>Movie Name</th>
-                  <th>Movie Language</th>
-                  <th>Genre</th>
-                  <th>Runtime</th>
-                  <th>Description</th>
-                  <th>Trailer</th>
-                  <th>Status</th>
-
-                </tr>
-
-
-
-                </thead>
-                <tbody>
-                <form method="post" action="/updatemoviestatus">
-                  <tr>
-                    <td>sdsvh</td>
-
-                  </tr>
-
-
-
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
 
 
 
