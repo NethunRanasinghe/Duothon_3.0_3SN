@@ -32,7 +32,7 @@ public class db_con {
                 owner owner = new owner();
 
                 que.setInt(1,id);
-                result = state.executeQuery(Query);
+                result = que.executeQuery();
 
                 while (result.next())
                 {
@@ -67,21 +67,115 @@ public class db_con {
     }
 
     // Retrieve Pharmacy Data
-    public List<String> Get_Pharmacy()
+    public List<pharmacy> Get_Pharmacy(int pid)
     {
-        List<String> PharmacyData = new ArrayList<>();
+        List<pharmacy> PharmacyData = new ArrayList<>();
 
-        //Pass
+        try
+        {
+            Class.forName("com.mysql.jdbc.Driver");
+            conn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/blue_healthcare_db","root","");
+            state = conn.createStatement();
+
+
+            String Query = "SELECT * FROM pharmacy WHERE id=?";
+            try
+            {
+                PreparedStatement que = conn.prepareStatement(Query);
+                pharmacy pharmacy = new pharmacy();
+                que.setInt(1,pid);
+                result = que.executeQuery();
+
+                while (result.next())
+                {
+                    int phar_id = result.getInt("id");
+                    String name = result.getString("pname");
+                    String address = result.getString("paddress");
+                    String pcity = result.getString("pcity");
+                    String number = result.getString("pcontactno");
+                    String mail = result.getString("email");
+                    String lice = result.getString("license");
+
+                    pharmacy.set_id(phar_id);
+                    pharmacy.set_name(name);
+                    pharmacy.set_address(address);
+                    pharmacy.set_city(pcity);
+                    pharmacy.set_phone(number);
+                    pharmacy.set_email(mail);
+                    pharmacy.set_city(pcity);
+                    pharmacy.set_license(lice);
+
+                    PharmacyData.add(pharmacy);
+                }
+            }
+            catch (SQLException e)
+            {
+                throw new RuntimeException(e);
+            }
+        }
+        catch (Exception e)
+        {
+            out.print(e);
+        }
 
         return PharmacyData;
     }
 
     // Retrieve Inventory Data
-    public List<String> Get_Inventory()
+    public List<inventory> Get_Inventory(int phid, String ph_name)
     {
-        List<String> InventoryData = new ArrayList<>();
+        List<inventory> InventoryData = new ArrayList<>();
 
-        //Pass
+        try
+        {
+            Class.forName("com.mysql.jdbc.Driver");
+            conn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/blue_healthcare_db","root","");
+            state = conn.createStatement();
+
+
+            String Query = "SELECT * FROM ?_inv WHERE ph_id = ?";
+            try
+            {
+                PreparedStatement que = conn.prepareStatement(Query);
+                inventory inventory = new inventory();
+                que.setString(1,ph_name);
+                que.setInt(2,phid);
+                result = que.executeQuery();
+
+                while (result.next())
+                {
+                    int id = result.getInt("id");
+                    int phar_id = result.getInt("ph_id");
+                    String pname = result.getString("product_name");
+                    int quantity = result.getInt("product_quantity");
+                    float unitp = result.getFloat("product_unit_price");
+                    String psupp = result.getString("product_supp");
+                    String expdate = result.getString("product_exp_date");
+                    String ndc = result.getString("product_ndc");
+                    String pmanf = result.getString("product_manufacturer");
+
+                    inventory.set_id(id);
+                    inventory.set_phar_id(phar_id);
+                    inventory.set_pname(pname);
+                    inventory.set_quantity(quantity);
+                    inventory.set_unitp(unitp);
+                    inventory.set_psupp(psupp);
+                    inventory.set_expdate(expdate);
+                    inventory.set_ndc(ndc);
+                    inventory.set_pmanf(pmanf);
+
+                    InventoryData.add(inventory);
+                }
+            }
+            catch (SQLException e)
+            {
+                throw new RuntimeException(e);
+            }
+        }
+        catch (Exception e)
+        {
+            out.print(e);
+        }
 
         return InventoryData;
     }

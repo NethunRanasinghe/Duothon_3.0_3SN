@@ -180,26 +180,47 @@
                 ${message}
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title mb-8 font-bold uppercase text-xl">Employee details</h4>
+                        <h4 class="card-title mb-8 font-bold uppercase text-xl">Inventory/Add new drug</h4>
 
                         <form class="forms-sample" id="contact" method="post" action="/addstaff">
                             <div class="form-group">
-                                <label >Employee Name</label>
-                                <input type="text" class="form-control"  name="empname" placeholder="Name" required>
+                                <select name="drugname">
+                                    <option value="0">Select Drug name</option>
+                                    <option value="1">Paracytamol</option>
+                                    <option value="2">Citracin</option>
+                                </select>
                             </div>
                             <div class="form-group">
-                                <label >Employee Email</label>
-                                <input type="email" class="form-control" name="empmail"  placeholder="Email" required>
+                                <input type="text" class="form-control"  name="supplier" placeholder="Supplier" required>
+                            </div>
+                            <div class="form-group">
+
+                                <input type="date" class="form-control" name="expdate"  placeholder="Select Expiration Date" required>
                             </div>
 
                             <div class="form-group">
-                                <label >Employee Password</label>
-                                <input type="password" class="form-control"  name="emppassword" placeholder="Password" required>
+
+                                <input type="text" class="form-control"  name="unitprice" placeholder="Unit Price" required>
+                            </div>
+
+                            <div class="form-group">
+
+                                <input type="text" class="form-control"  name="manufacturer" placeholder="Manufacturer" required>
+                            </div>
+
+                            <div class="form-group">
+
+                                <input type="text" class="form-control"  name="ndc" placeholder="NDC(National Drug Code)" required>
+                            </div>
+
+                            <div class="form-group">
+
+                                <input type="number" class="form-control"  name="quantity" placeholder="Quantity on hand" required>
                             </div>
 
 
-                            <button type="submit" class="btn btn-primary bg-black ">Add User</button>
-                            <button class="btn ">Cancel</button>
+                            <button type="submit" class="btn btn-primary bg-black ">Add Drug</button>
+
                         </form>
                     </div>
                 </div>
