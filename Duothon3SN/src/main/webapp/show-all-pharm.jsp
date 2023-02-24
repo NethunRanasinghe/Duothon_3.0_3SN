@@ -35,8 +35,8 @@
 <nav class="p-5 bg-black shadow md:flex md:items-center md:justify-between">
   <div class="flex justify-between item-center">
             <span class="cursor-pointer">
-                <a href="index.jsp">
-                    <img class="h-10 inline px-10" src="assets/images/logo.png" alt="">
+                <a href="#">
+                    <img class="h-10 inline px-10" src="./images/logo.png" alt="">
                 </a>
             </span>
     <span class="text-3xl cursor-pointer mx-2 md:hidden block">
@@ -52,7 +52,7 @@
     </li>
     <li class="mx-5 my-5 md:my-0">
       <a href="/movies.jsp"
-         class="text-xl text-white font-sans md:font-sans hover:text-[#DAA520] duration-500">SHOW ALL PARMACHIES</a>
+         class="text-xl text-white font-sans md:font-sans hover:text-[#DAA520] duration-500">SHOW ALL PHARMACIES</a>
     </li>
 
   </ul>
@@ -157,7 +157,7 @@
 <footer class="p-4 bg-black  shadow md:px-6 md:py-8 ">
   <div class="sm:flex sm:items-center sm:justify-between">
     <a href="index.jsp" class="flex items-center mb-4 sm:mb-0">
-      <img src="/assets/images/abc_cinema_logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
+      <img src="./images/logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
       <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
     </a>
     <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">

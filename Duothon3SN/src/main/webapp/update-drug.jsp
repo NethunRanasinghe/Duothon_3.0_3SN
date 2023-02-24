@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Sahansa
+  User: ASUS
   Date: 24/02/2023
   Time: 13:34
   To change this template use File | Settings | File Templates.
@@ -120,8 +120,7 @@
 
   </script>
 </head>
-
-<body bgcolor="rgb(100 11139)">
+<body>
 <div class=" divide">
 
   <nav class="sidebar sid " >
@@ -137,7 +136,7 @@
 
         </a>
 
-        <div  >
+        <div>
           <ul class="nav  sub-menu">
             <li class="nav-item"> <a class="nav-link uppercase font-bold" href="/admin/addemployee.jsp">Add Item</a></li>
             <li class="nav-item"> <a class="nav-link uppercase font-bold" href="/admin/empmanage.jsp">Update Item</a></li>
@@ -168,7 +167,7 @@
       <div class="navbar-menu-wrapper  ">
 
         <div class="navbar-brand-wrapper ">
-        <!--  <a class="navbar-brand brand-logo" href="/admin/adindex.jsp"><img src="./images/logo.png" class="mt-5 px-10" alt="logo"/></a>-->
+          <!--  <a class="navbar-brand brand-logo" href="/admin/adindex.jsp"><img src="./images/logo.png" class="mt-5 px-10" alt="logo"/></a>-->
 
         </div>
 
@@ -180,68 +179,77 @@
 
 
     </nav>
-    <h2></h2>
-    <div class="table-wrapper">
-      <table class="fl-table">
-        <thead>
-        <tr>
-          <th>ID</th>
-          <th>Pharmacy Name</th>
-          <th>Pharmacy Email</th>
-          <th>Owner Name</th>
-          <th>Verification Status</th>
-          <th>Actions</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>1</td>
-          <td>Veyangoda Pharmacy</td>
-          <td>veyanpharma@gmail.com</td>
-          <td>Sajeewa</td>
-          <td>OK</td>
-          <td>
-            <a style="color: rgb(0,0,139);" href="google.lk">Update</a> &nbsp &nbsp
-            <a style="color: red;" href="google.lk">Delete</a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>1</td>
-          <td>Gampaha Pharmacy</td>
-          <td>Gampaharma@gmail.com</td>
-          <td>Nethun/td>
-          <td>OK</td>
-          <td>
-            <a style="color: rgb(0,0,139);" href="google.lk">Update</a> &nbsp &nbsp
-            <a style="color: red;" href="google.lk">Delete</a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>1</td>
-          <td>Colombo Pharmacy</td>
-          <td>Colombo@gmail.com</td>
-          <td>Sahansa</td>
-          <td>OK</td>
-          <td>
-            <a style="color: rgb(0,0,139);" href="google.lk">Update</a> &nbsp &nbsp
-            <a style="color: red;" href="google.lk">Delete</a>
-          </td>
-        </tr>
+    <div class="main-panel mt-10">
+      <div class="content-wrapper">
+        <div class="row">
 
 
-        <tbody>
-      </table>
-    </div>
+        </div>
+        ${message}
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title mb-8 font-bold uppercase text-xl">Inventory/Update drug</h4>
+
+            <form class="forms-sample" id="contact" method="post" action="/addstaff">
+              <div class="form-group">
+                <select name="drugname">
+                  <option value="0">Select Drug name</option>
+                  <option value="1">Paracytamol</option>
+                  <option value="2">Citracin</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control"  name="supplier" placeholder="Supplier" required>
+              </div>
+              <div class="form-group">
+
+                <input type="date" class="form-control" name="expdate"  placeholder="Select Expiration Date" required>
+              </div>
+
+              <div class="form-group">
+
+                <input type="text" class="form-control"  name="unitprice" placeholder="Unit Price" required>
+              </div>
+
+              <div class="form-group">
+
+                <input type="text" class="form-control"  name="manufacturer" placeholder="Manufacturer" required>
+              </div>
+
+              <div class="form-group">
+
+                <input type="text" class="form-control"  name="ndc" placeholder="NDC(National Drug Code)" required>
+              </div>
+
+              <div class="form-group">
+
+                <input type="number" class="form-control"  name="quantity" placeholder="Quantity on hand" required>
+              </div>
 
 
+              <button type="submit" class="btn btn-primary bg-black ">Update Drug</button>
 
-
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
 
+
+
+
+    </div>
   </div>
+
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+
+</div>
 </div>
 </div>
 

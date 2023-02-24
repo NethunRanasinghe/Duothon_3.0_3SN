@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: #e0dbef;
+}
+
+.wrapper{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_box{
+    background: #6fa1fd;
+    position: relative;
+    padding: 15px;
+    border-radius: 50px;
+    display: flex;
+}
+
+.search_box .search_btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #b0cbff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.search_box .input_search{
+    outline: none;
+    border: 0;
+    background: #b0cbff;
+    border-radius: 50px;
+    padding: 200x 200px;
+    width: 300px;
+    height: 50px;
+    color: black;
+}
+
+::placeholder {
+    color: black;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+:-ms-input-placeholder {
+    color: #fff;
+}
+
+/* table styling */
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    font-family: Helvetica;
+    -webkit-font-smoothing: antialiased;
+    background: rgba( 71, 147, 227, 1);
+}
+h2{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    padding: 30px 0;
+}
+
+/* Table Styles */
+
+.table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child{
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/*Pharm-invent-dash*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+/* body color */
+body {
+    margin: 0;
+
+    background-color: rgb(100 116 139);
+}
+
+/* remove sidebar link underline */
+a {
+
+    text-decoration: none;
+
+}
+/* table border design */
+
+table {
+    border-collapse: collapse;
+}
+
+/* table spread after sidebar */
+
+.container-fluid{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Dashboard row usage */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* Table design */
+
+.table th,
+.table td {
+    padding: 1.25rem 0.9375rem;
+    vertical-align: top;
+    border-top: 1px solid #f3f3f3;
+}
+
+
+
+.table-bordered {
+    border: 1px solid #f3f3f3;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #f3f3f3;
+}
+
+/* form */
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2.875rem;
+    padding: 0.875rem 1.375rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+
+}
+
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    padding: 0.875rem 1.5rem;
+    cursor: pointer;
+}
+
+.btn-1{
+    color: #fff;
+    background-color: rgba(218, 165, 32, 1);
+    margin-top: 20px;
+    padding: 20px 0px;
+    width: 100%;
+
+}
+
+
+
+
+
+.btn-primary {
+    color: #fff;
+    background-color: rgba(218, 165, 32, 1);
+    border-color: rgba(218, 165, 32, 1);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: rgb(189, 143, 28);
+    border-color: rgb(189, 143, 28);
+}
+
+.input-group {
+    display: flex;
+
+    width: 100%;
+}
+
+.input-group>.form-control
+{
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+    margin-bottom: 0;
+}
+/*sidebar design*/
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+/*card*/
+.card {
+    position: relative;
+    display: flex;
+
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #d8e0ec;
+    border-radius: 0;
+}
+
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+/* keep sidebar and rest parellely */
+.divide
+{
+    display: flex ;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-group label {
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+.form-group .file-upload-default {
+    visibility: hidden;
+    position: absolute;
+}
+
+/* Sidebar */
+.sidebar {
+    min-height: calc(110vh - 65px);
+    height: 100%;
+    background: #000000;
+    font-family: "Source Sans Pro", sans-serif;
+    width: 400px;
+}
+
+.sidebar .nav {
+
+    flex-direction: column;
+    margin-bottom: 60px;
+
+}
+
+.sidebar .nav .nav-item .nav-link {
+    display: flex;
+    white-space: nowrap;
+    padding: 0.6rem 2.125rem;
+    color: #ffffff;
+
+}
+
+.sidebar .nav .nav-item.active>.nav-link {
+    background: rgba(218, 165, 32, 1);
+;
+    position: relative;
+}
+
+.sidebar .nav:not(.sub-menu)>.nav-item:hover>.nav-link {
+    background: rgb(89 65 5 / 54%);
+    color: #ffffff;
+}
+/* sidebar design*/
+.sidebar .nav.sub-menu {
+    margin-bottom: 0;
+    margin-top: 0;
+    list-style: none;
+    padding: 0.25rem 0 0.875rem 4.5rem;
+}
+
+/* ball in submenu */
+.sidebar .nav.sub-menu .nav-item::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    margin-top: 17px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.sidebar .nav.sub-menu .nav-item .nav-link {
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    position: relative;
+    font-size: 0.937rem;
+    line-height: 1;
+    height: auto;
+    border-top: 0;
+}
+
+.sidebar .nav.sub-menu .nav-item .nav-link:hover {
+    color: rgba(218, 165, 32, 1);
+}
+
+.sidebar .nav.sub-menu .nav-item .nav-link.active {
+    color: rgba(218, 165, 32, 1);
+    background: transparent;
+}
+
+
+
+/* Navbar */
+/*.navbar {
+
+  background: url(../images/nav.jpeg) center center no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: auto;
+
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

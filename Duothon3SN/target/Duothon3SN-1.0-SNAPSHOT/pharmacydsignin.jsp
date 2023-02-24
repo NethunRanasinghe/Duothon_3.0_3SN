@@ -24,11 +24,15 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.css" />
-
-
+<!--
+    <style>
+        body {
+            background-image: url('');
+        }
+    </style> -->
 </head>
 
-<body class="bg-slate-500"
+<body class="bg-slate-500">
 
 <div class="md:container md:mx-auto">
 
@@ -45,7 +49,7 @@
                         class="grow-0 shrink-1 md:shrink-0 basis-auto xl:w-6/12 lg:w-6/12 md:w-9/12 mb-12 md:mb-0"
                 >
                     <img
-                            src=""
+                            src="./images/logo.png" alt=""
                             class="w-full"
 
                     />
