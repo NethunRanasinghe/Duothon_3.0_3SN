@@ -52,7 +52,7 @@
     </li>
     <li class="mx-5 my-5 md:my-0">
       <a href="/movies.jsp"
-         class="text-xl text-white font-sans md:font-sans hover:text-[#DAA520] duration-500">SHOW ALL PARMACHIES</a>
+         class="text-xl text-white font-sans md:font-sans hover:text-[#DAA520] duration-500">SHOW ALL PHARMACIES</a>
     </li>
 
   </ul>
