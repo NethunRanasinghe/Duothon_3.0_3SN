@@ -59,7 +59,10 @@
 
 </nav>
 </div>
-
+<!--cover images-->
+<div class="coverimg">
+<img class="img2" src="./images/cover.png">
+</div>
 <!--search bar-->
 <div class="wrapper">
     <div class="search_box">
@@ -69,94 +72,6 @@
     </div>
 </div>
 <!--search bar-->
-<!--table results -->
-
-<h2></h2>
-<div class="table-wrapper">
-    <table class="fl-table">
-        <thead>
-        <tr>
-            <th>Pharm ID</th>
-            <th>Pharm Name</th>
-            <th>Location</th>
-            <th>Contact No</th>
-            <th>Email</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>1</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tbody>
-    </table>
-</div>
 
 <!--Footer-->
 <br><br>
@@ -164,7 +79,7 @@
 <footer class="p-4 bg-black  shadow md:px-6 md:py-8 ">
     <div class="sm:flex sm:items-center sm:justify-between">
         <a href="index.jsp" class="flex items-center mb-4 sm:mb-0">
-            <img src="./images/logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
+            <img src="./images/logo.png" class="h-8 mr-3" alt="Flowbite Logo" />x
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
         </a>
         <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
