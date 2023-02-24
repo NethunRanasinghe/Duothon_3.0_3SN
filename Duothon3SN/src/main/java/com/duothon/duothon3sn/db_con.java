@@ -183,6 +183,7 @@ public class db_con {
     // Set Owner Data
     public boolean Set_Owner()
     {
+
         return false;
     }
 
@@ -213,14 +214,33 @@ public class db_con {
     }
 
     // Set Inventory
-    public boolean Set_Inventory(String ph_name, int ph_id, String pname, int pquantity, float unit_price, String supp, String exp_date, String ndc, String manufacturer)
+    public boolean Set_Inventory(String ph_name, int ph_id, String pname, int pquantity, float unit_price, String supp, String exp_date, String ndc, String manufacturer, String oE)
     {
+        String phNm;
+        String qry="SELECT pname FROM pharmacy WHERE id=(SELECT ph_id FROM owner WHERE email='"+oE+"')";
+        String tbName;
+        try
+        {
+            Class.forName("com.mysql.jdbc.Driver");
+            conn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/blue_healthcare_db","root","");
+            Statement st = conn.createStatement();
+            ResultSet rs=st.executeQuery(qry);
+            rs.next();
+            tbName=rs.getString("pname");
+
+        }
+        catch (SQLException | ClassNotFoundException e)
+        {
+            throw new RuntimeException(e);
+        }
         String Query = "INSERT INTO ?_inv(ph_id,product_name,product_quantity,product_unit_price,product_supp,product_exp_date,product_ndc,product_manufacturer) VALUES(?,?,?,?,?,?,?,?)";
 
         try
         {
+            Class.forName("com.mysql.jdbc.Driver");
+            conn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/blue_healthcare_db","root","");
             PreparedStatement que = conn.prepareStatement(Query);
-            que.setString(1,ph_name);
+            que.setString(1,tbName);
             que.setInt(2,ph_id);
             que.setString(3,pname);
             que.setInt(4,pquantity);
@@ -235,13 +255,65 @@ public class db_con {
         {
             throw new RuntimeException(e);
         }
+        catch (ClassNotFoundException e)
+        {
+            throw new RuntimeException(e);
+        }
         return false;
     }
 
     // Update Pharmacy
-    public boolean Update_Pharmacy()
+    public boolean Update_Pharmacy(String name,String address,String city, String contactNo,String email,String license,String Oemail)
     {
-        String Query = "";
+        String Query = "UPDATE pharmacy SET pname=?,paddress=?,pcity=?,pcontactno=?,pemail=?,plicense=?" +
+                       "WHERE id=(SELECT ph_id from owner WHERE email=?)";
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            conn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/blue_healthcare_db","root","");
+            PreparedStatement statement = conn.prepareStatement(Query);
+            statement.setString(1,name);
+            statement.setString(2,address);
+            statement.setString(3,city);
+            statement.setString(4,contactNo);
+            statement.setString(5,email);
+            statement.setString(6,license);
+            statement.setString(7,Oemail);
+
+            statement.executeUpdate();
+        }
+
+        catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        } finally {
+
+        }
+
+        return  false;
+    }
+
+    public boolean Update_Owner(String name,String phNo,String nic, String email,String address, String Oemail) throws ClassNotFoundException, SQLException {
+        String Query = "UPDATE owner SET name=?,phno=?,nic=?,email=?,address=?" +
+                "WHERE email=?)";
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            conn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/blue_healthcare_db","root","");
+            PreparedStatement statement = conn.prepareStatement(Query);
+            statement.setString(1,name);
+            statement.setString(2,phNo);
+            statement.setString(3,nic);
+            statement.setString(4,email);
+            statement.setString(5,email);
+            statement.setString(6,address);
+            statement.setString(7,Oemail);
+
+            statement.executeUpdate();
+        }
+        catch (Exception e){
+            throw new RuntimeException(e);
+        }
         return  false;
     }
 
