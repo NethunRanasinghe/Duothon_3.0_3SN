@@ -150,5 +150,31 @@
   </table>
 </div>
 
+
+<!--Footer-->
+<br><br>
+
+<footer class="p-4 bg-black  shadow md:px-6 md:py-8 ">
+  <div class="sm:flex sm:items-center sm:justify-between">
+    <a href="index.jsp" class="flex items-center mb-4 sm:mb-0">
+      <img src="/assets/images/abc_cinema_logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+    </a>
+    <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+      <li>
+        <a href="privancy.jsp" class="mr-4 hover:underline md:mr-6 ">PRIVACY POLICY</a>
+      </li>
+      <li>
+        <a href="term.jsp" class="mr-4 hover:underline md:mr-6">TERMS & CONDITIONS</a>
+      </li>
+
+    </ul>
+  </div>
+  <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+  <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"><a href="#"
+                                                                                 class="hover:underline"></a>COPYRIGHT © 2022 Veyangoda Pharmacy.ALL RIGHTS RESERVED.
+          </span>
+</footer>
+
 </body>
 </html>

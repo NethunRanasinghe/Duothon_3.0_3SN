@@ -191,3 +191,295 @@ h2{
         text-align: center;
     }
 }
+
+
+/*Pharm-invent-dash*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+/* body color */
+body {
+    margin: 0;
+
+    background-color: rgb(100 116 139);
+}
+
+/* remove sidebar link underline */
+a {
+
+    text-decoration: none;
+
+}
+/* table border design */
+
+table {
+    border-collapse: collapse;
+}
+
+/* table spread after sidebar */
+
+.container-fluid{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Dashboard row usage */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* Table design */
+
+.table th,
+.table td {
+    padding: 1.25rem 0.9375rem;
+    vertical-align: top;
+    border-top: 1px solid #f3f3f3;
+}
+
+
+
+.table-bordered {
+    border: 1px solid #f3f3f3;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #f3f3f3;
+}
+
+/* form */
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2.875rem;
+    padding: 0.875rem 1.375rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+
+}
+
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    padding: 0.875rem 1.5rem;
+    cursor: pointer;
+}
+
+.btn-1{
+    color: #fff;
+    background-color: rgba(218, 165, 32, 1);
+    margin-top: 20px;
+    padding: 20px 0px;
+    width: 100%;
+
+}
+
+
+
+
+
+.btn-primary {
+    color: #fff;
+    background-color: rgba(218, 165, 32, 1);
+    border-color: rgba(218, 165, 32, 1);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: rgb(189, 143, 28);
+    border-color: rgb(189, 143, 28);
+}
+
+.input-group {
+    display: flex;
+
+    width: 100%;
+}
+
+.input-group>.form-control
+{
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+    margin-bottom: 0;
+}
+/*sidebar design*/
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+/*card*/
+.card {
+    position: relative;
+    display: flex;
+
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #d8e0ec;
+    border-radius: 0;
+}
+
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+/* keep sidebar and rest parellely */
+.divide
+{
+    display: flex ;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-group label {
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+.form-group .file-upload-default {
+    visibility: hidden;
+    position: absolute;
+}
+
+/* Sidebar */
+.sidebar {
+    min-height: calc(110vh - 65px);
+    height: 100%;
+    background: #000000;
+    font-family: "Source Sans Pro", sans-serif;
+    width: 400px;
+}
+
+.sidebar .nav {
+
+    flex-direction: column;
+    margin-bottom: 60px;
+
+}
+
+.sidebar .nav .nav-item .nav-link {
+    display: flex;
+    white-space: nowrap;
+    padding: 0.6rem 2.125rem;
+    color: #ffffff;
+
+}
+
+.sidebar .nav .nav-item.active>.nav-link {
+    background: rgba(218, 165, 32, 1);
+;
+    position: relative;
+}
+
+.sidebar .nav:not(.sub-menu)>.nav-item:hover>.nav-link {
+    background: rgb(89 65 5 / 54%);
+    color: #ffffff;
+}
+/* sidebar design*/
+.sidebar .nav.sub-menu {
+    margin-bottom: 0;
+    margin-top: 0;
+    list-style: none;
+    padding: 0.25rem 0 0.875rem 4.5rem;
+}
+
+/* ball in submenu */
+.sidebar .nav.sub-menu .nav-item::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    margin-top: 17px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.sidebar .nav.sub-menu .nav-item .nav-link {
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    position: relative;
+    font-size: 0.937rem;
+    line-height: 1;
+    height: auto;
+    border-top: 0;
+}
+
+.sidebar .nav.sub-menu .nav-item .nav-link:hover {
+    color: rgba(218, 165, 32, 1);
+}
+
+.sidebar .nav.sub-menu .nav-item .nav-link.active {
+    color: rgba(218, 165, 32, 1);
+    background: transparent;
+}
+
+
+
+/* Navbar */
+/*.navbar {
+
+  background: url(../images/nav.jpeg) center center no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: auto;
+
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
