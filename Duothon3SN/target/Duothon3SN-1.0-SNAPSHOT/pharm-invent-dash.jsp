@@ -136,6 +136,14 @@
           Inventory
 
         </a>
+
+        <div  >
+          <ul class="nav  sub-menu">
+            <li class="nav-item"> <a class="nav-link uppercase font-bold" href="/admin/addemployee.jsp">Add Item</a></li>
+            <li class="nav-item"> <a class="nav-link uppercase font-bold" href="/admin/empmanage.jsp">Update Item</a></li>
+
+          </ul>
+        </div>
       </li>
 
       <li class="nav-item">
